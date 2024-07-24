@@ -1,0 +1,31 @@
+[user]
+name = Armon Raphiel
+email = araphiel@gmail.com
+username = araphiel
+signingKey = ~/.ssh/id_rsa.pub
+
+[pull]
+ff = only
+
+[commit]
+gpgsign = false
+
+[gpg]
+format = ssh
+
+[gpg "ssh"]
+allowedSignersFile = ~/.ssh/allowed_signers
+
+[core]
+editor = code --wait
+
+# [includeIf "gitdir:~/Sites/example/**"]
+# 	path = ~/Sites/example/.gitconfig
+
+[safe]
+[rerere]
+enabled = true
+[credential]
+helper = manager
+[init]
+defaultBranch = main
